@@ -42,11 +42,11 @@
           width:auto;
           height:auto;
       }
-      #sectionEducation {padding-top:50px;padding-bottom:50px;height:100%; color:#fff;background-color: #8B8C81;}
-      /*#sectionSkills {padding-top:30px;height:100%;color: #fff; background-color: #F2B809; }
-      #sectionHobbies {padding-top:30px;height:100%;color: #fff; background-color: #F37402; }
+      #sectionEducation {padding-top:2vh;padding-bottom:2vh;height:25vh; color:#fff;background-color: #1A7DD7;}
+      /*#sectionSkills {padding-top:30px;height:100%;color: #fff; background-color: #F2B809; }*/
+      /*#sectionHobbies {padding-top:30px;height:100%;color: #fff; background-color: #F37402; }*/
       #sectionCareer {padding-top:30px;height:100%;color: #fff; background-color: #F34605;}
-      #sectionQualification {padding-top:30px;height:100%;color: #fff; background-color: #03275A;padding-bottom:50px}*/
+      /*#sectionQualification {padding-top:30px;height:100%;color: #fff; background-color: #03275A;padding-bottom:50px}*/
 
       h3{
           width:auto;
@@ -90,15 +90,26 @@
           -ms-transform: translate(-50%, -50%);
       }
 
+      .img-circle{
+        border-radius: 50%;
+
+      }
+      h5{
+        color:#923C04;
+      }
+      h4{
+        color:#573C04;
+      }
+
     </style>
 </head>
 
 <body>
-<div class="container-fluid bg-3 text-center" style="height:100%;padding-bottom= 50px; background-color: lightblue;">
-<br><br>
+
+<div class="container-fluid bg-3 text-center" style="height:100%;padding-bottom= 50px;">
   <div class="row" >
     <div class="col-sm-6">
-      <center style="margin:2%; right:1vw; padding-top:50px; text-align: left;  vertical-align: middle;">
+      <center style="margin:3%; padding-top:50px; text-align: left;  vertical-align: middle;">
         <h1 class="display-1" style="color:#573C04;">Welcome to Peter's Page</h1>
         <br>
       <p style="color:#923C04;">
@@ -108,28 +119,68 @@
     </center>
   </div>
 
-<div class="col-sm-6">
-  <img src="./photo/peter_burned.png" style="height:100vh;" >
+  <div class="col-sm-6" style="height:60vh;">
+    <img src="./photo/a.jpg" class="img-circle" style="padding-top:50px; height:55vh; width: auto;" >
+    <br>
+    <br>
+    <li style="color:#923C04;">This is a picture taken in Jeju, South Korea</li>
+    <br>
+  </div>
+</div>
+</div>
+<br>
+<br><br>
 
+<div id="sectionEducation" >
+    <h1 style="margin:2%;">Education</h1>
 </div>
-</div>
-</div>
+
 <div class="container-fluid" style="height:100%; padding-top:30px;">
+  <br>
+  <center>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Hong Kong University of Science and Technology</h4>
+      <!-- <br> -->
+      <img src="./photo/edu/HKUST.png"  style="padding-top:50px; height:45vh; width: auto;" >
+      <br><br>
+      <h5>- Major in Computer Science</h5>
+      <h5>- Expected Graduation in 2019</h5>
+
+    </div>
+    <div class="col-sm-4">
+      <h4>Czech Technical University in Prague</h4>
+        <!-- <br> -->
+        <img src="./photo/edu/CVUT.jpg"  style="padding-top:50px; height:45vh; width: auto;" >
+        <br><br>
+        <h5>- Study Aboard Program</h5>
+        <h5>- 2017 Fall Semester</h5>
+    </div>
+    <div class="col-sm-4">
+        <h4>Korea Advance Institue of Science and Technology</h4>
+        <!-- <br> -->
+        <img src="./photo/edu/KAIST.png"  style="padding-top:50px; height:45vh; width: auto;" >
+        <br><br>
+        <h5>- Summer Exchange Program</h5>
+        <h5>- 2015 Summer Semester</h5>
+    </div>
+  </div>
+</center>
+</div>
+<br><br>
+
+<div id="sectionCareer" >
+    <h1 style="margin:2%;">Career</h1>
+</div>
+</body>
+
+
+
+
 <blockquote class="blockquote">
   <p class="mb-0">Whoever is happy will make others happy too.</p>
   <footer class="blockquote-footer">Anne Frank</footer>
 </blockquote>
-<br>
-<ul class="fa-ul">
-  <li><i class="fa-li fa fa-check-square"></i>Happy</li>
-  <li><i class="fa-li fa fa-check-square"></i>as</li>
-  <li><i class="fa-li fa fa-spinner fa-spin"></i>fuck</li>
-  <li><i class="fa-li fa fa-square"></i>in Prague</li>
-</ul>
-
-</div>
-
-</body>
 
 
 </html>
