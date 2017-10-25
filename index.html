@@ -6,242 +6,111 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src=”jquery.mobile.custom.min.js”></script>
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-    <style>
-        body {
-            position: relative;
-        }
-        #sectionHome {
-            padding-top:50px;
-            width:auto;
-            height:auto;
-        }
-        #sectionEducation {padding-top:30px;height:100%;color: #fff; background-color: #1A7DD7;}
-        #sectionSkills {padding-top:30px;height:100%;color: #fff; background-color: #F2B809; }
-        #sectionHobbies {padding-top:30px;height:100%;color: #fff; background-color: #F37402; }
-        #sectionCareer {padding-top:30px;height:100%;color: #fff; background-color: #F34605;}
-        #sectionQualification {padding-top:30px;height:100%;color: #fff; background-color: #03275A;padding-bottom:50px}
-
-        h3{
-            width:auto;
-            text-align: center;
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-        }
-        .topic{
-            font-size: 100%;
-            color: white;
-        }
-
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: 1s ease;
-            background-color: #173BD7;
-        }
-
-        .container:hover .overlay {
-            opacity: 0.9;
-        }
-
-        .text {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-        }
-
-    </style>
-</head>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbarTop">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" >Peter's Profile</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbarTop">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#sectionHome">Home</a></li>
-                <li><a href="./travel">Travel Diary</a></li>
-                <li><a href="./extra_curricular">Extra-curricular Activity</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbarBottom">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div>
-            <div class="collapse navbar-collapse" id="myNavbarBottom">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbarTop">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" >Peter's Travel</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbarTop">
                 <ul class="nav navbar-nav">
-                    <li><a href="#sectionEducation">Education</a></li>
-                    <li><a href="#sectionSkills">Skills</a></li>
-                    <li><a href="#sectionHobbies">Hobbies</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Career <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#sectionCareer">Work Experience</a></li>
-                            <li><a href="#sectionQualification">Qualifications</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="./">Home</a></li>
+                    <li><a href="./travel">Travel Diary</a></li>
+                    <li><a href="./extra_curricular">Extra-curricular Activity</a></li>
                 </ul>
             </div>
         </div>
+    </nav>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <style type="text/css">
+      .cover {
+        background-image: url('./photo/cover.png');
+        padding-top: 50px;
+        width: 100vw;
+        /*height: auto;*/
+      }
+      body {
+          position: relative;
+      }
+      #sectionHome {
+          padding-top:50px;
+          width:auto;
+          height:auto;
+      }
+      #sectionEducation {padding-top:50px;padding-bottom:50px;height:100%; color:#fff;background-color: #8B8C81;}
+      /*#sectionSkills {padding-top:30px;height:100%;color: #fff; background-color: #F2B809; }
+      #sectionHobbies {padding-top:30px;height:100%;color: #fff; background-color: #F37402; }
+      #sectionCareer {padding-top:30px;height:100%;color: #fff; background-color: #F34605;}
+      #sectionQualification {padding-top:30px;height:100%;color: #fff; background-color: #03275A;padding-bottom:50px}*/
 
-    </div>
-</nav>
+      h3{
+          width:auto;
+          text-align: center;
+      }
 
-<div id="sectionHome" class="carousel slide" data-ride="carousel" style="max-height: 100%; width: auto;">
-<div class="container-fluid">
-<img src="https://spark.adobe.com/images/landing/examples/hiking-fb-cover.jpg">
+      .container {
+          position: relative;
+          width: 100%;
+      }
+      .topic{
+          font-size: 100%;
+          color: white;
+      }
+
+
+      .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 1s ease;
+          background-color: #173BD7;
+      }
+
+      .container:hover .overlay {
+          opacity: 0.9;
+      }
+
+      .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+      }
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid bg-3 text-center" style="height:100vh; padding-top= 50px;">
+<br><br>
+  <div class="row" >
+    <div class="col-sm-6" >
+      <center style="margin:5%; padding-top:50px;width:45vw; text-align: left;  vertical-align: middle;">
+        <h1>Welcome to Peter's Page</h1>
+      <p>
+        Admiration we surrounded possession frequently he.
+        Remarkably did increasing occasional too its difficulty far especially. Known tiled but sorry joy balls. Bed sudden manner indeed fat now feebly. Face do with in need of wife paid that be. No me applauded or favourite dashwoods therefore up distrusts explained
+      </p>
+    </center>
+  </div>
+
+<div class="col-sm-6">
+  <img src="./photo/peter.jpg" style="height:100vh; padding-top= 50px;" >
 </div>
 </div>
-
-<div id="sectionEducation" class="container-fluid" data-toggle="collapse" href="#collapseEdu" >
-    <h1>Education</h1>
-    <div class="collapse" id="collapseEdu">
-        <br><br>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="container">
-                    <img src="/img/edu/SCG.png" alt="TWGHsSCGMC" style="height:35vh;" class="img-responsive center-block" ><br>
-                    <div class="overlay">
-                        <div class="text">
-                            <h1>Secondary School</h1>
-                            <h4>2009-2015</h4><br>
-                            <h4>Electives:</h4>
-                            <h4>- Physics</h4>
-                            <h4>- Chemistry</h4>
-                            <h4>- Math Module 2</h4>
-                        </div>
-                    </div>
-                    <h3 style="width:auto">TWGHs S.C.Gaw Memorial College</h3>
-                </div>
-            </div>
-
-
-            <div class="col-sm-3">
-                <div class="container">
-                    <img src="/img/edu/HKUST.png" alt="HKUST" style="height: 35vh;" class="img-responsive center-block" ><br>
-                    <div class="overlay">
-                        <div class="text">
-                            <h1>Undergraduate Study</h1>
-                            <h4>2015-2019</h4><br>
-                            <h4>Bachelor of Engineering</h4>
-                            <h4>Major in Computer Science</h4>
-                        </div>
-                    </div>
-                    <h3 style="width:auto">Hong Kong University of Science and Technology</h3>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="container">
-                    <img src="/img/edu/KAIST.png" alt="KAIST" style="height: 35vh;" class="img-responsive center-block" ><br>
-                    <div class="overlay">
-                        <div class="text">
-                            <h1>Summer Exchange</h1>
-                            <h4>2016 Summer</h4><br>
-                            <h4>Learning Outcome:</h4>
-                            <h4>- Widen My Horizon</h4>
-                            <h4>- Improve My People Skills</h4>
-                        </div>
-                    </div>
-                    <h3 style="width:auto">Korea Advanced Institute of Science and Technology</h3>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="container">
-                    <img src="/img/edu/CVUT.jpg" alt="CVUT" style="height: 35vh;" class="img-responsive center-block" ><br>
-                    <div class="overlay">
-                        <div class="text">
-                            <h1>Term Exchange</h1>
-                            <h4>2017 Fall</h4><br>
-                            <h4>Learning Outcome:</h4>
-                            <h4>- Learn to be independent</h4>
-                            <h4>- Learn Western Culture</h4>
-                        </div>
-                    </div>
-                    <h3 style="width:auto">Czech Technical university in Prague</h3>
-                </div>
-            </div>
-        </div>
-        <br><br><br>
-    </div>
-</div>
-<div id="sectionSkills" class="container-fluid" data-toggle="collapse" href="#collapseSkills" >
-    <h1>Skills</h1>
-    <div class="collapse" id="collapseSkills">
-        <div class="row" style="padding-left: 7%">
-            <div class="col-sm-4">
-                <img src="/img/skills/ps.png" style="width: 30%" class="img-responsive center-block">
-                <h3>Problem Solving Skill</h3><br><br>
-            </div>
-            <div class="col-sm-4">
-                <img src="/img/skills/communication.png" style="width: 30%" class="img-responsive center-block">
-                <h3>Communication Skill</h3><br><br>
-            </div>
-
-            <div class="col-sm-4">
-                <img src="/img/skills/tw.png" style="width: 30%" class="img-responsive center-block">
-                <h3>Team Worker</h3><br><br>
-            </div>
-        </div>
-
-    </div>
-</div>
-<div id="sectionHobbies" class="container-fluid" data-toggle="collapse" href="#collapseHobbies" >
-    <h1>Hobbies</h1>
-    <div class="collapse" id="collapseHobbies">
-        <div class="row" style="padding-left: 7%">
-            <div class="col-sm-4">
-                <img src="https://image.flaticon.com/icons/svg/188/188700.svg" style="width: 30%" class="img-responsive center-block">
-                <h3>Playing guitar</h3><br><br>
-            </div>
-            <div class="col-sm-4">
-                <img src="https://image.flaticon.com/icons/svg/214/214351.svg" style="width: 30%" class="img-responsive center-block">
-                <h3>Drama</h3><br><br>
-            </div>
-
-            <div class="col-sm-4">
-                <img src="http://www.amphsonline.org/assets/images/h-icon-handshake-b-1024x10241024x1024-196.png" style="width: 30%" class="img-responsive center-block">
-                <h3>Social Service</h3><br><br>
-            </div>
-    </div>
-
-    </div>
-</div>
-<div id="sectionCareer" class="container-fluid">
-    <h1>Work Experience</h1>
-</div>
-<div id="sectionQualification" class="container-fluid">
-    <h1>Qualification</h1>
 </div>
 
 
