@@ -40,7 +40,12 @@
       body {
           position: relative;
       }
-
+      #Home{
+        background-color: #fff;
+        background-image:
+        linear-gradient(#eee .1em, transparent .1em);
+        background-size: 100% 1.2em;
+      }
       #sectionEducation {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #1A7DD7; box-shadow: 10px 5px 5px #888888;}
       /*#sectionSkills {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F2B809; }*/
       /*#sectionHobbies {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F37402; }*/
@@ -52,6 +57,13 @@
           text-align: center;
       }
 
+      .img-circle{
+          border-radius:50%;
+      }
+
+      .img-circle:hover{
+        border-radius:100%;
+      }
       .container {
           position: relative;
           width: 100%;
@@ -59,24 +71,6 @@
       .topic{
           font-size: 100%;
           color: white;
-      }
-
-
-      .overlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 100%;
-          width: 100%;
-          opacity: 0;
-          transition: 1s ease;
-          background-color: #173BD7;
-      }
-
-      .container:hover .overlay {
-          opacity: 0.9;
       }
 
       .text {
@@ -108,6 +102,12 @@
         font-size: 1em;
         margin: 0.8vw;
       }
+      .carousel-caption {
+        position: relative;
+        left: auto;
+        right: auto;
+        text-shadow: none;
+    }
 
     </style>
 </head>
@@ -115,12 +115,12 @@
 <body>
 
 <div class="container-fluid bg-3 text-center" id="Home" style="height:100%;padding-bottom= 50px; min-height: 100vh;">
-  <div class="row" >
+  <div class="row" style="position: relative;">
     <div class="col-sm-6">
-      <center style="margin:3%; padding-top:50px; text-align: left;  vertical-align: middle;  min-height: 100vh;">
+      <center style="margin:3%; padding-top:50px; text-align: left;  vertical-align: middle;  min-height: 100vh; max-width:80vw;">
         <h1 class="display-1" style="color:#573C04;">Welcome to Peter's Page</h1>
         <br>
-      <p style="color:#923C04; line-height:6vh;">
+      <p style="color:#923C04; line-height:6.5vh;">
         Hi everybody!<br>
         I'm Peter Mok from Hong Kong. <br>
         I am Happy to see someone clicked into my page.
@@ -131,14 +131,44 @@
       </p>
     </center>
   </div>
-
+<center>
   <div class="col-sm-6" style="height:60vh;padding-top:50px; min-height:80vh;">
-    <img src="./photo/a.jpg" class="img-circle" style="padding-top:50px;max-height:60vh; width: auto;" >
-    <br>
-    <br>
-    <h5 style="text-align:center;">- This is a picture taken in Jeju, South Korea</li>
-    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" >
+          <img src="./photo/a.jpg" class="img-thumbnail" style="max-height:60vh; width: auto; margin:5%;">
+          <div class="carousel-caption">
+          <h5>- This is a picture taken in Jeju, South Korea in summer exchange</h5>
+      </div>
+        </div>
+
+        <div class="item">
+          <img src="./photo/b.jpg" class="img-thumbnail" style="max-height:60vh; width: auto; margin:5%;">
+          <div class="carousel-caption">
+          <h5>- This is a picture taken in Bohemian Switzerland in Czech Republic</h5>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="./photo/c.jpg" class="img-thumbnail" style="max-height:60vh; width: auto; margin:5%;">
+          <div class="carousel-caption">
+          <h5>- This is a picture about my school life in HKUST</h5>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./photo/d.jpg" class="img-thumbnail" style="max-height:60vh; width: auto; margin:5%;">
+          <div class="carousel-caption">
+          <h5>- Celebrating for Christmas</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- <img src="./photo/a.jpg" class="img-thumbnail" style="max-height:60vh; width: auto; margin:5%;" > -->
+
   </div>
+</center>
+
 </div>
 </div>
 <br>
@@ -155,7 +185,7 @@
     <div class="col-sm-4" >
       <h4>Hong Kong University of Science and Technology</h4>
       <!-- <br> -->
-      <img src="./photo/edu/HKUST.png"  style="padding-top:50px; max-height:45vh; width: auto; max-width: 90vw;" >
+      <img src="./photo/edu/HKUST.png"  style="padding-top:30px; max-height:45vh; width: auto; max-width: 90vw;" >
       <br><br>
       <h5>- Major in Computer Science</h5>
       <h5>- Expected Graduation in 2019</h5>
@@ -164,7 +194,7 @@
     <div class="col-sm-4">
       <h4>Czech Technical University in Prague</h4>
         <!-- <br> -->
-        <img src="./photo/edu/CVUT.jpg"  style="padding-top:50px; max-height:45vh; width: auto;max-width: 90vw;" >
+        <img src="./photo/edu/CVUT.jpg"  style="padding-top:30px; max-height:45vh; width: auto;max-width: 90vw;" >
         <br><br>
         <h5>- Study Aboard Program</h5>
         <h5>- 2017 Fall Semester</h5>
@@ -172,7 +202,7 @@
     <div class="col-sm-4">
         <h4>Korea Advance Institue of Science and Technology</h4>
         <!-- <br> -->
-        <img src="./photo/edu/KAIST.png"  style="padding-top:50px; max-height:45vh; width: auto;max-width: 90vw;" >
+        <img src="./photo/edu/KAIST.png"  style="padding-top:30px; max-height:45vh; width: auto;max-width: 90vw;" >
         <br><br>
         <h5>- Summer Exchange Program</h5>
         <h5>- 2015 Summer Semester</h5>
