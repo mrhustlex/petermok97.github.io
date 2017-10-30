@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
+  
 <head>
     <title>Peter's Profile</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -44,9 +45,6 @@
       body {
           position: relative;
       }
-        img{
-        max-width: 90% 90vw; height:auto;
-        }
       #Home{
         background-color: #fff;
         background-image:
@@ -58,16 +56,13 @@
       /*#sectionHobbies {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F37402; }*/
       #sectionCareer {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #F34605; box-shadow: 10px 10px 5px #888888;}
       /*#sectionQualification {padding-top:30px;height:100%;color: #fff; background-color: #03275A;padding-bottom:50px}*/
-
       h3{
           width:auto;
           text-align: center;
       }
-
       .img-circle{
           border-radius:50%;
       }
-
       .img-circle:hover{
         border-radius:100%;
       }
@@ -79,7 +74,6 @@
           font-size: 100%;
           color: white;
       }
-
       .text {
           color: white;
           font-size: 20px;
@@ -89,10 +83,8 @@
           transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
       }
-
       /*.img-circle{
         border-radius: 50%;
-
       }*/
       h5{
         color:#923C04;
@@ -103,7 +95,6 @@
       h6{
         color:#5C1C05;
       }
-
       .btWd{
         color: #ACA5C4;
         font-size: 1em;
@@ -115,7 +106,6 @@
         right: auto;
         text-shadow: none;
     }
-
     .polaroid{
       border: 10px solid #fff;
       border-bottom: 45px solid #fff;
@@ -123,7 +113,6 @@
          -moz-box-shadow: 3px 3px 3px 3px #777;
                  box-shadow: 3px 3px 3px 3px #777;
 }
-
 span.paper-clip:after {
     width: 11px;
     height: 20px;
@@ -154,9 +143,9 @@ span.paper-clip {
 <body>
 
 <div class="container-fluid bg-3 text-center" id="Home" style="height:100%;padding-bottom= 50px; min-height: 100vh;">
-  <div class="row" style="">
-    <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6">
-      <center style="margin:3%; padding-top:50px; text-align: left;  vertical-align: middle;  min-height: 100vh; max-width:80vw;">
+  <div class="row" style="position: relative;">
+    <div class="col-sm-6">
+      <center style="margin:3%; padding-top:50px; text-align: left;  vertical-align: middle;  min-height: 100vh; max-width:80vw;">
         <h1 class="display-1" style="color:#573C04;">Welcome to Peter's Page</h1>
         <br>
       <p style="color:#923C04; line-height:6.5vh;">
@@ -171,11 +160,11 @@ span.paper-clip {
     </center>
   </div>
 <center>
-  <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6" style="height:60vh;padding-top:50px;min-height:80vh;">
+  <div class="col-sm-6" style="height:60vh;padding-top:50px;min-height:80vh;">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-width:90vw; height:auto;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-width:90vw;min-height:100%; ">
       <div class="carousel-inner">
-        <div class="item active" style="max-width:90vw; position:absolute;">
+        <div class="item active" style="max-width:90vw;">
           <img src="./photo/a.jpg" class="polaroid" style="max-height:60vh; width: auto; margin:5%; max-width:90vw;">
           <div class="carousel-caption">
           <h5>- This is a picture taken in Jeju, South Korea in summer exchange</h5>
@@ -183,26 +172,26 @@ span.paper-clip {
         </div>
 
         <div class="item" style="max-width:90vw;">
-          <img src="./photo/b.jpg" class="polaroid img-responsive" style="max-height:60vh;height:auto; width: auto; margin:5%; max-width:90vw;">
+          <img src="./photo/b.jpg" class="polaroid" style="max-height:60vh;height:auto; width: auto; margin:5%; max-width:90vw;">
           <div class="carousel-caption">
           <h5>- This is a picture taken in Bohemian Switzerland in Czech Republic</h5>
           </div>
         </div>
 
         <div class="item" style="max-width:90vw;">
-          <img src="./photo/d.jpg" class="polaroid img-responsive" style="max-height:60vh;height:auto; width: auto; margin:5%; max-width:90vw;">
+          <img src="./photo/d.jpg" class="polaroid" style="max-height:60vh;height:auto; width: auto; margin:5%; max-width:90vw;">
           <div class="carousel-caption">
             <h5>- Celebrating for Christmas in Hong Kong</h5>
           </div>
         </div>
         <div class="item" style="max-width:90vw;">
-          <img src="./photo/c.JPG" class="polaroid img-responsive" style="max-height:60vh;height:auto; width: auto; margin:5%;">
+          <img src="./photo/c.JPG" class="polaroid" style="max-height:60vh;height:auto; width: auto; margin:5%;">
           <div class="carousel-caption">
             <h5>- This is a picture about my school life in HKUST</h5>
           </div>
         </div>
         <div class="item" style="max-width:90vw;">
-          <img src="./photo/c.JPG" class="polaroid img-responsive" style="max-height:60vh;height:auto; width: auto; margin:5%;">
+          <img src="./photo/c.JPG" class="polaroid" style="max-height:60vh;height:auto; width: auto; margin:5%;">
           <div class="carousel-caption">
             <h5>- This is a picture about my school life in HKUST</h5>
           </div>
@@ -227,27 +216,27 @@ span.paper-clip {
   <br>
   <center>
   <div class="row">
-    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4" >
+    <div class="col-sm-4" >
       <h4>Hong Kong University of Science and Technology</h4>
       <!-- <br> -->
-      <img src="./photo/edu/HKUST.png" class="img-responsive" style="padding-top:30px; max-height:45vh; height:auto; " >
+      <img src="./photo/edu/HKUST.png"  style="padding-top:30px; max-height:45vh; width: auto; max-width: 90vw;" >
       <br><br>
       <h5>- Major in Computer Science</h5>
       <h5>- Expected Graduation in 2019</h5>
 
     </div>
-    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+    <div class="col-sm-4">
       <h4>Czech Technical University in Prague</h4>
         <!-- <br> -->
-        <img src="./photo/edu/CVUT.jpg" class="img-responsive" style="padding-top:30px; max-height:45vh; height:auto;" >
+        <img src="./photo/edu/CVUT.jpg"  style="padding-top:30px; max-height:45vh; width: auto;max-width: 90vw;" >
         <br><br>
         <h5>- Study Aboard Program</h5>
         <h5>- 2017 Fall Semester</h5>
     </div>
-    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+    <div class="col-sm-4">
         <h4>Korea Advance Institue of Science and Technology</h4>
         <!-- <br> -->
-        <img src="./photo/edu/KAIST.png" class="img-responsive" style="padding-top:30px; max-height:45vh; height:auto;" >
+        <img src="./photo/edu/KAIST.png"  style="padding-top:30px; max-height:45vh; width: auto;max-width: 90vw;" >
         <br><br>
         <h5>- Summer Exchange Program</h5>
         <h5>- 2015 Summer Semester</h5>
@@ -262,30 +251,30 @@ span.paper-clip {
 </div>
 <div class="container-fluid" style="padding-top:50px;padding-bottom:50px; height:100%; line-height:6vh; min-height: 100vh;">
 
-    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4"  style="position:absolute;">
+    <div class="col-sm-4">
 
       <h4>Pokeguide Limited </h4>
-      <h6>2017 Feb - Aug </h6>
+      <h6>2017 Feb - Aug </h6>
       <h5>- Mobile App Development Intern</h5>
-      <h5>- Team of 9 programmers and 1 Project Manager</h5>
-      <h5>- Backend API  Development by PHP (Laravel) </h5>
+      <h5>- Team of 9 programmers and 1 Project Manager</h5>
+      <h5>- Backend API  Development by PHP (Laravel) </h5>
       <h5>- Android Frontend Development by JAVA including Accessiblity Function</h5>
-      <h5>- API Reference and Test Case  Documenting by Google Doc </h5>
+      <h5>- API Reference and Test Case  Documenting by Google Doc </h5>
       <h5>- Team Work By Git, Asana</h5>
       <br>
       <br>
     </div>
-    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+    <div class="col-sm-4">
       <h4>Coding 101</h4>
-      <h6>2017 Feb - Aug </h6>
-      <h5>- Part-Time STEM(Coding) Instructor </h5>
+      <h6>2017 Feb - Aug </h6>
+      <h5>- Part-Time STEM(Coding) Instructor </h5>
       <h5>- Teaching a class of 20 Junior Secondary students</h5>
       <h5>- Teaching and Demonstrating Scratch (Programming Learning Tool) in class</h5>
       <h5>- Preparing Laborartory Topic for Student </h5>
       <br>
       <br>
 </div>
-      <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="col-sm-4">
         <h4>InnoTec Engineering</h4>
         <h6>2016 Jan - May</h6>
         <h5>- Engineer Assistant (Building Service)</h5>
@@ -298,15 +287,15 @@ span.paper-clip {
       </div>
 
   </div>
-  <!-- <div class="col-sm-4">                                                                                                                                                                                                                                                                                   
+  <!-- <div class="col-sm-4">                                                                                                                                                                                                                                                                                   
       <h4>Intertek Testing (HK)</h4>
-      <h5>2015 May - July</h5>
+      <h5>2015 May - July</h5>
       <h5>- Summer Helper (Quality Assurance)</h5>
       <h5>- Performing Basic Testing (e.g. PVC Test) Before Sending the Samples to the Lab</h5>
-      <h5>- Separating the component of toy samples</h5>
-      <h5>- Making Sorting List of Testing according to the Country of Export</h5>
+      <h5>- Separating the component of toy samples</h5>
+      <h5>- Making Sorting List of Testing according to the Country of Export</h5>
   </div>
-  <div class="col-sm-4">                                                                                                                                                                                                                                                                                   
+  <div class="col-sm-4">                                                                                                                                                                                                                                                                                   
       <h4>HKUST Career Center</h4>
       <h5>2016 Sept - Oct</h5>
       <h5>- Customer Service Intern</h5>
