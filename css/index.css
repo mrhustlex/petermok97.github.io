@@ -1,3 +1,28 @@
+.navbar-default{
+  background: #E9E9F5;
+}
+
+.navbar-default .navbar-nav > .active{
+    color: #white;
+    background: #575757;
+}
+.navbar-default .navbar-nav > .active > a{
+  background: #575757;
+  color: white;
+}
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: #575757;
+    color: white;
+}
+
+
+.Mcontainer-fluid{
+  height:100%;
+   padding-top:30px;
+   line-height:5vh;
+   min-height: 100vh;
+}
 
 img {
 max-width: 100%;
@@ -22,7 +47,7 @@ max-height: 100%;
   /*#sectionSkills {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F2B809; }*/
   /*#sectionHobbies {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F37402; }*/
   #sectionCareer {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #F34605; box-shadow: 10px 10px 5px #888888;}
-  /*#sectionQualification {padding-top:30px;height:100%;color: #fff; background-color: #03275A;padding-bottom:50px}*/
+  #sectionProject {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #03275A; box-shadow: 10px 10px 5px #888888;}
   h3{
       width:auto;
       text-align: center;
