@@ -114,11 +114,10 @@ max-height: 100%;
 .school{
   max-width: 90%;
   max-height:45vh;
-
+  padding-top:30px;
 }
 
 .iconBox{
-  padding-top:30px;
    max-width: 90vw;
    max-height:45vh;
 }
