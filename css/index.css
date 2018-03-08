@@ -42,8 +42,8 @@ max-height: 100%;
     background-image:
     linear-gradient(#eee .5vh, transparent .5vh);
     background-size: 100% 1.5em;
-    font-size:2vh;
-    line-height:6.5vh;
+    font-size:3vh;
+    line-height:6vh;
   }
   #sectionEducation {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #1A7DD7; box-shadow: 10px 5px 5px #888888;}
   /*#sectionSkills {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F2B809; }*/
