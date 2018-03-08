@@ -49,6 +49,7 @@ max-height: 100%;
   /*#sectionSkills {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F2B809; }*/
   /*#sectionHobbies {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F37402; }*/
   #sectionCareer {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #F34605; box-shadow: 10px 10px 5px #888888;}
+  #sectionExtra {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #F37402; box-shadow: 10px 10px 5px #888888;}
   #sectionProject {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #03275A; box-shadow: 10px 10px 5px #888888;}
   h3{
       width:auto;
@@ -77,6 +78,12 @@ max-height: 100%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
   }
+
+  .section_footer{
+    position: relative;
+    bottom: 1vh;
+  }
+
   /*.img-circle{
     border-radius: 50%;
   }*/
