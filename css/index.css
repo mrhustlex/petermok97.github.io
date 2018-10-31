@@ -47,7 +47,7 @@ max-height: 100%;
   }
   #sectionEducation {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #1A7DD7; box-shadow: 10px 5px 5px #888888;}
   /*#sectionSkills {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F2B809; }*/
-  /*#sectionHobbies {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #F37402; }*/
+  #sectionEProject {padding-top:30px;height:100%;color: #fff;width: 100vw; background-color: #0327BB; box-shadow: 10px 10px 5px #888888;}
   #sectionCareer {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #F34605; box-shadow: 10px 10px 5px #888888;}
   #sectionExtra {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #F37402; box-shadow: 10px 10px 5px #888888;}
   #sectionProject {padding-top:3vh;padding-bottom:2vh;height:25vh;width: 100%;color:#fff;background-color: #03275A; box-shadow: 10px 10px 5px #888888;}
