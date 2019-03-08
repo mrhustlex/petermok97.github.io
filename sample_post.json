@@ -1,0 +1,25 @@
+{
+  "response": "success",
+  "message": "success on exhibit info retrieval",
+  "result": [
+    {
+      "description": "\t\t\t\t\t\n 創世紀 Genesis 2018<br />\n\n油彩 畫布 Oil on canvas, 40 cm X 100 cm<br />\n\n <br />\n\n人於天地間，注視著大地。<br />\n\n天地無言。<br />\n\n但有人聽見了天地間的對話。<br />\n\n<br />\n\nWho are we? Where are we going? ",
+      "id": 1,
+      "img": "http://lbcone.ust.hk/exhibit/uploads/168/3433/1.陳鏗油畫(創世紀)100cmX40cm 2018年作.jpg",
+      "link": "http://lbcone.ust.hk/exhibit/exhibition/168/artwork/3433",
+      "num_feedback": 0,
+      "num_like": 0,
+      "title": "創世紀",
+      "feedback": [
+        {
+          "nickname": "Phoebus",
+          "comment": "This is good"
+        },
+        {
+          "nickname": "Peter",
+          "comment": "Hi"
+        }
+      ]
+    }
+  ]
+}
