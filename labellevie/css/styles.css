@@ -573,7 +573,7 @@ body {
   color: #000000 !important;
 }
 .logo {
-  font-size: 40px;
+  font-size: 20px;
   color: #000000;
   text-transform: uppercase;
   padding-bottom: 60px;
@@ -698,6 +698,7 @@ body {
   padding-right: 10px;
   opacity: 1;
   letter-spacing: 1px;
+  font-family: Didot, 'Didot LT STD';
 }
 .project-item .title a:hover {
   color: #ffffff !important;
